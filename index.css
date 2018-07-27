@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  color: blue;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  border: solid grey 2px;
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+  background-color: azure;
+  border-radius: 10%;
+}
+
+.bookmark-filter{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#bookmark-list{
+  text-align: center;
+  list-style: none;
+  border: solid black 1px;
+  width: 400px;
+  margin: auto;
+}
