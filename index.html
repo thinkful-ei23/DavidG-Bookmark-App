@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="index.css">
 	<title>My Bookmarks</title>
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px|Sunflower:300" rel="stylesheet">
 </head>
 <body>
 	<header role="banner">
@@ -14,19 +13,19 @@
 	</header>
 	<section role="region" class="container">
 		<form class="js-bookmarks-add-form">
-			<div class="title-input">
+			<section class="title-input">
 				<label for="bookmark-title">Title:</label>
 				<input type="text" name="title" id="bookmark-title" placeholder="Enter Title here">
-			</div>
-			<div class="url-input">
+			</section>
+			<section class="url-input">
 				<label for="bookmark-url">URL:</label>
 				<input type="text" name="url" id="bookmark-url" placeholder="Enter Website Address Here">
-			</div>
-			<div class="description-input">
+			</section>
+			<section class="description-input">
 				<label for="bookmark-description">Description:</label>
-				<textarea type="text" name="desc" id="bookmark-description" placeholder="Enter Description Here"></textarea>
-			</div>
-			<select class='bookmark-rating' aria-label="select rating">
+				<input type="text" name="desc" id="bookmark-description" placeholder="Enter Description Here"></textarea>
+			</section>
+			<select class='bookmark-rating' name="rating" aria-label="select rating">
               <option value="1">1 Star</option>
               <option value="2">2 Stars</option>
               <option value="3">3 Stars</option>

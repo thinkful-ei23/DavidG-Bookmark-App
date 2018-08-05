@@ -2,19 +2,38 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F5F5DC;
+}
+
 header {
-  color: blue;
+  color: black;
   text-align: center;
 }
 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.dropdown {
+  max-width: 400px;;
+}
+
+
+
 .container {
   text-align: center;
-  border: solid grey 2px;
-  width: 300px;
+  max-width: 400px;
   margin: auto;
   padding: 10px;
-  background-color: azure;
-  border-radius: 10%;
+  background-color: white;
+  border-radius: 5%;
 }
 
 .bookmark-filter{
@@ -23,10 +42,42 @@ header {
   text-align: center;
 }
 
+.js-bookmark{
+  text-align: center;
+  list-style: none;
+  background-color: white;
+  max-width: 600px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  padding: 10px;
+  border: #e5e5e5 solid 2px;
+  border-radius: 5%;
+}
+
+.description{
+  padding-top: 10px;
+  text-align: left;
+}
+
 #bookmark-list{
   text-align: center;
   list-style: none;
-  border: solid black 1px;
-  width: 400px;
   margin: auto;
+  border-radius: 5%;
+  background-color: white;
+  max-width: 600px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  padding: 3px;
+  text-decoration: none;
+  color: initial;
+  margin-top: 25px;
+  margin-right: 100px;
 }

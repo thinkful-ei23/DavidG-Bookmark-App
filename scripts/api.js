@@ -10,6 +10,7 @@ const api =(function() {
 
   const createBookmark = function(object, callback, error) {
     let newItem = JSON.stringify(object);
+    console.log(newItem);
     $.ajax({
       url : BASE_URL + '/bookmarks',
       method : 'POST',
@@ -32,7 +33,6 @@ const api =(function() {
 
   const throwError = function(message) {
     let errorMessage = JSON.parse(message.responseText).message;
-    console.log('Error is ' + errorMessage);
     alert(errorMessage);
   };
 

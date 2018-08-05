@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 'use strict';
 const store =(function() {
+  let bookmarks = [];
   let ratingFilter = 0;
 
   const addBookmark = function(item) {
@@ -16,5 +17,5 @@ const store =(function() {
     this.bookmarks = this.bookmarks.filter(item => item.id !== id);
   };
 	
-  return {bookmarks: [], ratingFilter, addBookmark, findById, findAndDelete};
+  return {bookmarks, ratingFilter, addBookmark, findById, findAndDelete};
 }() );
