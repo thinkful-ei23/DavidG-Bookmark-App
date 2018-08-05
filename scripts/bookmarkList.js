@@ -26,20 +26,20 @@ const bookmarkers = (function() {
     if (!bookmark.reduced) {
       return `
 			<li class="js-bookmark" data-item-id="${bookmark.id}">
-				<div class="js-bookmark-not-button">
+				<div class="js-bookmark-expand">
         <div style="float: left">Title: ${bookmark.title} </div>
         <div style="float: right">Rating: ${bookmark.rating}</div>
 				<div style="clear: both" class="description">Description: ${bookmark.desc}</div>
         </div>
         <a href="${bookmark.url}" class="button">GO</a>
 				<button class="delete-button">
-					<span class="button-label">remove</span>
+					<span class="button-label">Delete</span>
 				</button>
 		</li>`;
     }
     return `
 			<li class="js-bookmark" data-item-id="${bookmark.id}">
-				<div class="js-bookmark-not-button">
+				<div class="js-bookmark-expand">
 					 ${bookmark.title} 
 					<p>${bookmark.rating} Stars
 				</div>
@@ -63,7 +63,7 @@ const bookmarkers = (function() {
   }
 	
   function handleClickReduced() {
-    $('#bookmark-list').on('click', '.js-bookmark-not-button', e => {
+    $('#bookmark-list').on('click', '.js-bookmark-expand', e => {
       const dataId = getItemIdFromElement(e.target);
       let bookmark = store.findById(dataId);
       bookmark.reduced = !bookmark.reduced;
